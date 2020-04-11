@@ -1,3 +1,3 @@
-# Builder_King
+# Builder King
 
 ## Heart rate measurement
