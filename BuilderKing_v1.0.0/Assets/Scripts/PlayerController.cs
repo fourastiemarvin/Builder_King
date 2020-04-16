@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public Animator anim;
+    private double flyingState = 0.15;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
       // FORWARD WALKING
-      if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) {
+      if ((Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) && (transform.position.y < flyingState)) {
         anim.SetBool("isWalking", true);
       }
       else {
@@ -25,7 +26,7 @@ public class PlayerController : MonoBehaviour
       }
 
       // BACKWARD WALKING
-      if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
+      if ((Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) && (transform.position.y < flyingState)) {
         anim.SetBool("isBackwardWalking", true);
       }
       else {
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
       }
 
       // LEFT WALKING
-      if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) {
+      if ((Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) && (transform.position.y < flyingState)) {
         anim.SetBool("isLeftWalking", true);
       }
       else {
@@ -41,15 +42,28 @@ public class PlayerController : MonoBehaviour
       }
 
       // RIGHT WALKING
-      if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
+      if ((Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) && (transform.position.y < flyingState)) {
         anim.SetBool("isRightWalking", true);
       }
       else {
         anim.SetBool("isRightWalking", false);
       }
 
+      // FLYING
+      if (transform.position.y > flyingState) {
+        anim.SetBool("isFlying", true);
+      }
+      else {
+        anim.SetBool("isFlying", false);
+      }
+
       // SELECTING OBJECT
       if (Input.GetMouseButton(0)) {
+        anim.SetBool("isWalking", false);
+        anim.SetBool("isRightWalking", false);
+        anim.SetBool("isLeftWalking", false);
+        anim.SetBool("isBackwardWalking", false);
+        anim.SetBool("isFlying", false);
         anim.SetBool("isSelecting", true);
       }
       else {
