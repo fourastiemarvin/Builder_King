@@ -249,11 +249,9 @@ class GUI(QMainWindow, QThread):
         if self.process.bpms.__len__() >50:
             if(max(self.process.bpms-np.mean(self.process.bpms))<5): #show HR if it is stable -the change is not over 5 bpm- for 3s
                 self.lblHR2.setText("Heart rate: " + str(float("{:.2f}".format(np.mean(self.process.bpms)))) + " bpm")
-                # TODO: retrieve and plot heart rate
                 # heart_rate = np.mean(self.process.bpms)
                 with open("heart_rate.dat","a+") as f:
                     f.write(str(float("{:.2f}".format(np.mean(self.process.bpms))))+"\n")
-
 
         #self.lbl_Age.setText("Age: "+str(self.process.age))
         #self.lbl_Gender.setText("Gender: "+str(self.process.gender))
