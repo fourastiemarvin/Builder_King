@@ -17,6 +17,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      // Fix the skin to the container
+      transform.localPosition = new Vector3(0.02f, -1, -0.1f);
+      transform.localRotation =  Quaternion.identity;
+
       // FORWARD WALKING
       if ((Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) && (transform.position.y < flyingState)) {
         anim.SetBool("isWalking", true);
