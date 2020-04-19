@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public Animator anim;
-    private double flyingState = 0.15;
+    public bool onFly = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
       transform.localRotation =  Quaternion.identity;
 
       // FORWARD WALKING
-      if ((Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) && (transform.position.y < flyingState)) {
+      if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) {
         anim.SetBool("isWalking", true);
       }
       else {
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
       }
 
       // BACKWARD WALKING
-      if ((Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) && (transform.position.y < flyingState)) {
+      if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
         anim.SetBool("isBackwardWalking", true);
       }
       else {
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
       }
 
       // LEFT WALKING
-      if ((Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) && (transform.position.y < flyingState)) {
+      if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) {
         anim.SetBool("isLeftWalking", true);
       }
       else {
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
       }
 
       // RIGHT WALKING
-      if ((Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) && (transform.position.y < flyingState)) {
+      if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
         anim.SetBool("isRightWalking", true);
       }
       else {
@@ -54,11 +54,12 @@ public class PlayerController : MonoBehaviour
       }
 
       // FLYING
-      if (transform.position.y > flyingState) {
+      if (PlayerMovement.canFly) {
         anim.SetBool("isFlying", true);
       }
       else {
         anim.SetBool("isFlying", false);
+        onFly = false;
       }
 
       // SELECTING OBJECT
