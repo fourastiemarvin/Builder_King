@@ -18,7 +18,8 @@ public class CameraMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+      Debug.Log(Input.mousePosition.x);
+      Debug.Log(Input.mousePosition.y);
     }
 
     // Update is called once per frame
