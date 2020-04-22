@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
       characterInput = GetComponent<PlayerMovement>();
       body = GetComponent<Rigidbody>();
+      body.isKinematic = false;
     }
 
     // Update is called once per frame
