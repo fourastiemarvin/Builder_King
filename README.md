@@ -1,8 +1,8 @@
 # Builder King
 
 ### A puzzle game which adapt the difficulty with regard to your stress
-The goal of Builder King is simple: stack stones to reach the higher point possible. Your score will dermine if your the Builder King ! This game will send you in a beautiful island where you will can move freely in an impressive 3D environment.
-Builder King is unique by the way the game evolve regarding to your level of stress, the game will become easier or harder if your stress increase or not. 
+The goal of Builder King is simple: stack stones to reach the higher point possible. Your score will dermine if you are the Builder King ! This game will send you in a beautiful island where you will can move freely in an impressive 3D environment.
+Builder King is unique by the way the game evolves regarding to your level of stress, the game will become easier or harder if your stress increases or not. 
 
 ## Requirements
 To use the heart rate measurment tool, you will need [Python 3](https://www.python.org/downloads/). To install all the required libraries, run the following command:
