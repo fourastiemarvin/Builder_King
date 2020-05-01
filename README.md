@@ -12,7 +12,7 @@ pip3 install -r requirements.txt
 You can run the game on Windows, MacOS or Linux !
 
 ## Let's Play!
-After cloning/downloading the repository, run the following commands in your terminal to launch the heart rate measuremnt tool:
+After cloning/downloading the repository, run the following commands in your terminal to launch the heart rate measurement tool:
 ```
 cd Builder_King/Heart-rate-measurement
 python3 heart_rate_server.py
