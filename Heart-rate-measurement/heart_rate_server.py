@@ -60,3 +60,6 @@ while True:
     thread_2.start()
 
     socket.send_string(str(rate))
+    thread_2.join()
+    # threading.activeCount() if you want to see the number of thread currently
+    # running
