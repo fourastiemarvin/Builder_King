@@ -29,7 +29,15 @@ public class CameraMovement : MonoBehaviour
         pitch -= speedV * Input.GetAxis("Mouse Y");
 
         // attach camera to the player
+        // Debug.Log(transform.rotation.x);
+        // if (transform.rotation.x < -0.45) {
+        //   transform.rotation.x = new Vector3(-0.44f, 0, 0);
+        // }
+        // else if (transform.rotation.x > 0.80) {
+        //   transform.rotation.x = new Vector3(0.79f, 0, 0);
+        // }
         transform.Rotate(-Input.GetAxis("Mouse Y")*Time.deltaTime*mouseSensitivity*2, 0, 0);
+
         player.transform.Rotate(0,Input.GetAxis("Mouse X")*Time.deltaTime*mouseSensitivity*3,0);
         //Quaternion CamTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X")*RotationSpeed, Vector3.up);
 
