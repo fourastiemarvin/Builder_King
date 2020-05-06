@@ -5,8 +5,9 @@ The goal of Builder King is simple: stack stones to reach the higher point possi
 Builder King is unique by the way the game evolves regarding to your level of stress, the game will become easier or harder if your stress increases or not. 
 
 ## Requirements
-To use the heart rate measurment tool, you will need [Python 3](https://www.python.org/downloads/). To install all the required libraries, run the following command:
+To use the heart rate measurment tool, you will need [Python 3](https://www.python.org/downloads/), [CMake](https://cmake.org/download/) and [pip](https://pip.pypa.io/en/stable/installing/). To install all the required libraries, run the following commands:
 ```
+pip3 install pyzmq
 pip3 install -r requirements.txt
 ```
 You can run the game on Windows, MacOS or Linux !
@@ -19,7 +20,7 @@ python3 heart_rate_server.py
 ```
 You will normally see the application running.
 
-After that, launch right executable and enjoy !
+After that, launch the right executable and enjoy !
 
 ## Authors
 * [Patrick SARDINHA](https://github.com/sardinhapatrick)
