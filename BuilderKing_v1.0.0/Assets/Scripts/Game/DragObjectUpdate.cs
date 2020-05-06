@@ -5,7 +5,7 @@ using UnityEngine;
 public class DragObjectUpdate : MonoBehaviour
 {
 
-    public Camera cam;
+    public Camera cam = Camera.main;
     public static Transform rock;
     public float distanceFromCamera;
     public float maxVel = 30;
@@ -14,12 +14,16 @@ public class DragObjectUpdate : MonoBehaviour
     void OnMouseDown() {
       rock = null;
       rock = gameObject.transform;
+      Debug.Log("--> " + rock);
       rb = rock.GetComponent<Rigidbody>();
+      rb.constraints = RigidbodyConstraints.FreezeRotation;
       rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVel);
       distanceFromCamera = Vector3.Distance(rock.position, cam.transform.position);
+      Debug.Log("dist :"+distanceFromCamera);
     }
 
     void OnMouseUp(){
+      rb.constraints = RigidbodyConstraints.None;
       rb = null;
       rb.velocity = Vector3.zero;
       distanceFromCamera = 0;
