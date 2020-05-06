@@ -19,7 +19,7 @@ python3 heart_rate_server.py
 ```
 You will normally see the application running.
 
-After that, launch right executable and enjoy !
+After that, launch the right executable and enjoy !
 
 ## Authors
 * [Patrick SARDINHA](https://github.com/sardinhapatrick)
