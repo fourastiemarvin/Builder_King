@@ -20,6 +20,9 @@ public class DragObjectUpdate : MonoBehaviour
       rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVel);
       distanceFromCamera = Vector3.Distance(rock.position, cam.transform.position);
       Debug.Log("dist :"+distanceFromCamera);
+      // Timer on
+      Timer.StartTimer();
+      Debug.Log("START-------->"+Timer.startTime);
     }
 
     void OnMouseUp(){

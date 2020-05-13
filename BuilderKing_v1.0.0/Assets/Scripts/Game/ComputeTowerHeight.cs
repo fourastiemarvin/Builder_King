@@ -17,6 +17,9 @@ public class ComputeTowerHeight : MonoBehaviour
     public float maxZ;
 
     public int count;
+    public float countTime;
+
+    public bool spawnEasy;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +35,6 @@ public class ComputeTowerHeight : MonoBehaviour
       minZ = tower.position.z - (tower.GetComponent<Collider>().bounds.size.z)/2;
       maxZ = tower.position.z + (tower.GetComponent<Collider>().bounds.size.z)/2;
       Debug.Log("z: [" + minZ + "," + maxZ + "]");
-
       lastUpdate = 0;
     }
 
@@ -41,9 +43,11 @@ public class ComputeTowerHeight : MonoBehaviour
     {
       if (DragObjectUpdate.rock.position.y == lastUpdate) {
         count += 1;
+        countTime += Time.deltaTime;;
       }
       else {
         count = 0;
+        countTime = 0f;
       }
       lastUpdate = DragObjectUpdate.rock.position.y;
 
@@ -56,6 +60,12 @@ public class ComputeTowerHeight : MonoBehaviour
               if (DragObjectUpdate.rock.position.y > currentHeight) {
                 // Update the score
                 Scoring.scoreValue += 10;
+                // Timer off
+                Timer.EndTimer();
+                Debug.Log("END------>"+Timer.endTime);
+                // TODO: adapt the game
+                Debug.Log("TOTAL------>"+ (Timer.gameTime - countTime));
+
                 // Update current height
                 currentHeight = DragObjectUpdate.rock.position.y;
                 Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);
