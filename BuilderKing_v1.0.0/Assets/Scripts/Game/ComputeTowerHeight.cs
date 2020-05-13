@@ -19,7 +19,15 @@ public class ComputeTowerHeight : MonoBehaviour
     public int count;
     public float countTime;
 
-    public bool spawnEasy;
+    // spawn stones
+    public static bool spawnEasy = false;
+    public static bool spawnMedium = false;
+    public static bool spawnHard = false;
+
+    // remove stones
+    public static bool removeEasy = false;
+    public static bool removeMedium = false;
+    public static bool removeHard = false;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +73,24 @@ public class ComputeTowerHeight : MonoBehaviour
                 Debug.Log("END------>"+Timer.endTime);
                 // TODO: adapt the game
                 Debug.Log("TOTAL------>"+ (Timer.gameTime - countTime));
-
+                Debug.Log("NAME:" +DragObjectUpdate.rock.name);
+                // Spawn new ones
+                spawnEasy = true;
+                spawnMedium = true;
+                spawnHard = true;
+                // Remove stones
+                if (DragObjectUpdate.rock.name == "EasyRockMovable(Clone)") {
+                  removeMedium = true;
+                  removeHard = true;
+                }
+                if (DragObjectUpdate.rock.name == "MediumRockMovable(Clone)") {
+                  removeEasy = true;
+                  removeHard = true;
+                }
+                if (DragObjectUpdate.rock.name == "HardRockMovable(Clone)") {
+                  removeMedium = true;
+                  removeEasy = true;
+                }
                 // Update current height
                 currentHeight = DragObjectUpdate.rock.position.y;
                 Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);

@@ -18,7 +18,17 @@ public class MediumSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      if (ComputeTowerHeight.spawnMedium) {
+        ComputeTowerHeight.spawnMedium = false;
+        StartCoroutine(waitSpawner());
+      }
 
+      if (ComputeTowerHeight.removeMedium) {
+        ComputeTowerHeight.removeMedium = false;
+        if (clone.name == "MediumRockMovable(Clone)") {
+          Destroy(clone,0);
+        }
+      }
     }
 
     IEnumerator waitSpawner(){

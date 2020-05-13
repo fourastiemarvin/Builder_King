@@ -18,7 +18,17 @@ public class HardSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      if (ComputeTowerHeight.spawnHard) {
+        ComputeTowerHeight.spawnHard = false;
+        StartCoroutine(waitSpawner());
+      }
 
+      if (ComputeTowerHeight.removeHard) {
+        ComputeTowerHeight.removeHard = false;
+        if (clone.name == "HardRockMovable(Clone)") {
+          Destroy(clone,0);
+        }
+      }
     }
 
     IEnumerator waitSpawner(){

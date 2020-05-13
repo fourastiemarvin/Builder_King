@@ -18,12 +18,22 @@ public class EasySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      if (ComputeTowerHeight.spawnEasy) {
+        ComputeTowerHeight.spawnEasy = false;
+        StartCoroutine(waitSpawner());
+      }
 
+      if (ComputeTowerHeight.removeEasy) {
+        ComputeTowerHeight.removeEasy = false;
+        if (clone.name == "EasyRockMovable(Clone)") {
+          Destroy(clone,0);
+        }
+      }
     }
 
     IEnumerator waitSpawner(){
-	     transform.rotation = Quaternion.Euler (0,0,0);
-		   clone = (GameObject) Instantiate(rock, spawnPosition, transform.rotation);
-       return null;
+	    transform.rotation = Quaternion.Euler (0,0,0);
+		  clone = (GameObject) Instantiate(rock, spawnPosition, transform.rotation);
+      return null;
     }
 }
