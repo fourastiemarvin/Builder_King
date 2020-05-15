@@ -71,26 +71,12 @@ public class ComputeTowerHeight : MonoBehaviour
                 // Timer off
                 Timer.EndTimer();
                 Debug.Log("END------>"+Timer.endTime);
-                // TODO: adapt the game
-                Debug.Log("TOTAL------>"+ (Timer.gameTime - countTime));
+                // Adapt the game
+                Timer.gameTime -= countTime;
+                Debug.Log("TOTAL------>"+ Timer.gameTime);
                 Debug.Log("NAME:" +DragObjectUpdate.rock.name);
                 // Spawn new ones
-                spawnEasy = true;
-                spawnMedium = true;
-                spawnHard = true;
-                // Remove stones
-                if (DragObjectUpdate.rock.name == "EasyRockMovable(Clone)") {
-                  removeMedium = true;
-                  removeHard = true;
-                }
-                if (DragObjectUpdate.rock.name == "MediumRockMovable(Clone)") {
-                  removeEasy = true;
-                  removeHard = true;
-                }
-                if (DragObjectUpdate.rock.name == "HardRockMovable(Clone)") {
-                  removeMedium = true;
-                  removeEasy = true;
-                }
+                GameAdapter.Adapter();
                 // Update current height
                 currentHeight = DragObjectUpdate.rock.position.y;
                 Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);

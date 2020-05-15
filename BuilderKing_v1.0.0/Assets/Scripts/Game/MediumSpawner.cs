@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MediumSpawner : MonoBehaviour
 {
-    public GameObject rock;
+    public GameObject[] rockArray;
+    GameObject rock;
     GameObject clone;
-    public Vector3[] positions = new[] {new Vector3 (17.14f,15.84f,13.26f)};
-    public static Vector3 spawnPosition = new Vector3 (17.14f,15.84f,13.26f);
+    public Vector3[] positions = new[] {new Vector3 (17.14f,17.84f,13.26f)};
+    public static Vector3 spawnPosition = new Vector3 (17.14f,17.84f,13.26f);
 
     // Start is called before the first frame update
     void Start()
@@ -25,15 +26,15 @@ public class MediumSpawner : MonoBehaviour
 
       if (ComputeTowerHeight.removeMedium) {
         ComputeTowerHeight.removeMedium = false;
-        if (clone.name == "MediumRockMovable(Clone)") {
-          Destroy(clone,0);
-        }
+        Destroy(clone,0);
       }
     }
 
     IEnumerator waitSpawner(){
+       rock = rockArray[Random.Range(0,2)];
 	     transform.rotation = Quaternion.Euler (0,0,0);
 		   clone = (GameObject) Instantiate(rock, spawnPosition, transform.rotation);
+       clone.name = "MediumRockMovable(Clone)";
        return null;
     }
 }
