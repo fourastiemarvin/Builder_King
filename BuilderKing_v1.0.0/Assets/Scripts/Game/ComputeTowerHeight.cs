@@ -70,11 +70,8 @@ public class ComputeTowerHeight : MonoBehaviour
                 Scoring.scoreValue += 10;
                 // Timer off
                 Timer.EndTimer();
-                Debug.Log("END------>"+Timer.endTime);
                 // Adapt the game
                 Timer.gameTime -= countTime;
-                Debug.Log("TOTAL------>"+ Timer.gameTime);
-                Debug.Log("NAME:" +DragObjectUpdate.rock.name);
                 // Spawn new ones
                 GameAdapter.Adapter();
                 // Update current height

@@ -9,16 +9,19 @@ public class MediumSpawner : MonoBehaviour
     GameObject clone;
     public Vector3[] positions = new[] {new Vector3 (17.14f,17.84f,13.26f)};
     public static Vector3 spawnPosition = new Vector3 (17.14f,17.84f,13.26f);
+    public static int i;
 
     // Start is called before the first frame update
     void Start()
     {
-      StartCoroutine(waitSpawner());
+      i = Random.Range(0,3);
+      //StartCoroutine(waitSpawner());
     }
 
     // Update is called once per frame
     void Update()
     {
+      i = Random.Range(0,3);
       if (ComputeTowerHeight.spawnMedium) {
         ComputeTowerHeight.spawnMedium = false;
         StartCoroutine(waitSpawner());
@@ -31,7 +34,7 @@ public class MediumSpawner : MonoBehaviour
     }
 
     IEnumerator waitSpawner(){
-       rock = rockArray[Random.Range(0,2)];
+       rock = rockArray[i];
 	     transform.rotation = Quaternion.Euler (0,0,0);
 		   clone = (GameObject) Instantiate(rock, spawnPosition, transform.rotation);
        clone.name = "MediumRockMovable(Clone)";

@@ -14,15 +14,12 @@ public class DragObjectUpdate : MonoBehaviour
     void OnMouseDown() {
       rock = null;
       rock = gameObject.transform;
-      Debug.Log("--> " + rock);
       rb = rock.GetComponent<Rigidbody>();
       rb.constraints = RigidbodyConstraints.FreezeRotation;
       rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVel);
       distanceFromCamera = Vector3.Distance(rock.position, cam.transform.position);
-      Debug.Log("dist :"+distanceFromCamera);
       // Timer on
       Timer.StartTimer();
-      Debug.Log("START-------->"+Timer.startTime);
     }
 
     void OnMouseUp(){

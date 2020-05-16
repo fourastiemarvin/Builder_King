@@ -9,16 +9,19 @@ public class HardSpawner : MonoBehaviour
     GameObject clone;
     public Vector3[] positions = new[] {new Vector3 (-4.37f,17.67f,-4.63f)};
     public static Vector3 spawnPosition = new Vector3 (-4.37f,17.67f,-4.63f);
+    public static int i;
 
     // Start is called before the first frame update
     void Start()
     {
-      StartCoroutine(waitSpawner());
+      i = Random.Range(0,3);
+      //StartCoroutine(waitSpawner());
     }
 
     // Update is called once per frame
     void Update()
     {
+      i = Random.Range(0,3);
       if (ComputeTowerHeight.spawnHard) {
         ComputeTowerHeight.spawnHard = false;
         StartCoroutine(waitSpawner());
@@ -31,10 +34,10 @@ public class HardSpawner : MonoBehaviour
     }
 
     IEnumerator waitSpawner(){
-      rock = rockArray[Random.Range(0,2)];
-	     transform.rotation = Quaternion.Euler (0,0,0);
-		   clone = (GameObject) Instantiate(rock, spawnPosition, transform.rotation);
-       clone.name = "HardRockMovable(Clone)";
-       return null;
+      rock = rockArray[i];
+	    transform.rotation = Quaternion.Euler (0,0,0);
+		  clone = (GameObject) Instantiate(rock, spawnPosition, transform.rotation);
+      clone.name = "HardRockMovable(Clone)";
+      return null;
     }
 }
