@@ -24,6 +24,8 @@ class Process(object):
         self.peaks = []
         #self.red = np.zeros((256,256,3),np.uint8)
 
+        self.backup_fps = 0
+
     def extractColor(self, frame):
 
         #r = np.mean(frame[:,:,0])
@@ -73,6 +75,10 @@ class Process(object):
         if L == self.buffer_size:
 
             self.fps = float(L) / (self.times[-1] - self.times[0])#calculate HR using a true fps of processor of the computer, not the fps the camera provide
+            if self.fps < 6:
+                self.fps = self.backup_fps
+            else:
+                self.backup_fps = self.fps
             even_times = np.linspace(self.times[0], self.times[-1], L)
 
             processed = signal.detrend(processed)#detrend the signal to avoid interference of light change
