@@ -22,6 +22,9 @@ You will normally see the application running.
 
 After that, launch the right executable and enjoy !
 
+## Troubleshooting
+If you have errors while installing dlib here a [link](https://stackoverflow.com/a/49538054) to help you
+
 ## Authors
 * [Patrick SARDINHA](https://github.com/sardinhapatrick)
 * [Marvin FOURASTIE](https://github.com/fourastiemarvin)
