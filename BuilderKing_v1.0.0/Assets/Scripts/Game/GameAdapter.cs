@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameAdapter : MonoBehaviour
 {
 
+    private HeartRateRequester _heartRateRequester;
+
     public static float bpm;
     public static float oldBpm;
     public static float stoneTime;
@@ -16,6 +18,8 @@ public class GameAdapter : MonoBehaviour
     public static float hardRate = 0.5f;
     public static float easyRate = 1;
 
+    public static bool flagCall = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +27,7 @@ public class GameAdapter : MonoBehaviour
     }
 
     public static void Adapter() {
+      flagCall = true;
       stoneTime = Timer.gameTime;
       castEnable = float.TryParse(Bpm.bpmValue, out bpm);
       if (!castEnable) {
@@ -57,6 +62,16 @@ public class GameAdapter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      if (flagCall) {
+        _heartRateRequester = new HeartRateRequester();
+        _heartRateRequester.Start();
+        flagCall = false;
+      }
+    }
 
+
+    private void OnDestroy()
+    {
+        _heartRateRequester.Stop();
     }
 }

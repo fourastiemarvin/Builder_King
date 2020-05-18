@@ -18,6 +18,11 @@ public class UnityClient : MonoBehaviour
       }
     }
 
+    public void callHeartRate() {
+      _heartRateRequester = new HeartRateRequester();
+      _heartRateRequester.Start();
+    }
+
     private void OnDestroy()
     {
         _heartRateRequester.Stop();

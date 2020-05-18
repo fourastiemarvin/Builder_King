@@ -14,8 +14,10 @@ public class PlayerMovement : MonoBehaviour
     // KeyCode to allow fly character
     public KeyCode jumpKey;
     public KeyCode toggleFly;
-    public KeyCode flyUp;
-    public KeyCode flyDown;
+    public KeyCode flyUpFR;
+    public KeyCode flyDownFR;
+    public KeyCode flyUpEN;
+    public KeyCode flyDownEN;
 
     public static bool canFly;
 
@@ -24,7 +26,8 @@ public class PlayerMovement : MonoBehaviour
     {
       characterInput = GetComponent<PlayerMovement>();
       body = GetComponent<Rigidbody>();
-      body.isKinematic = false;
+      body.isKinematic = true;
+      Debug.Log("---->"+Application.systemLanguage);
     }
 
     // Update is called once per frame
@@ -34,6 +37,28 @@ public class PlayerMovement : MonoBehaviour
       currentPosition.y = Mathf.Clamp(currentPosition.y, minY, maxY);
       transform.position = currentPosition;
 
+      // TODO : CANEVA SELECTION KEYBOARD
+      // // FRENCH KEYBOARD
+      // if (Application.systemLanguage == SystemLanguage.French) {
+      //   // Move the player forward
+      //   if (Input.GetKey("z") || Input.GetKey(KeyCode.UpArrow)) {
+      //     transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
+      //   }
+      //   // Move backward
+      //   else if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
+      //     transform.position -= transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
+      //   }
+      //   // Move left
+      //   if (Input.GetKey("q") || Input.GetKey(KeyCode.LeftArrow)) {
+      //     transform.position += transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
+      //   }
+      //   // Move right
+      //   else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
+      //     transform.position -= transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
+      //   }
+      // }
+
+      // SWISS KEYBOARD
       // Move the player forward
       if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) {
         transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
@@ -50,18 +75,31 @@ public class PlayerMovement : MonoBehaviour
       else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
         transform.position -= transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
       }
+
       // Enable fly
       if (Input.GetKeyDown(characterInput.toggleFly)) {
         Fly();
       }
-      // Move Up
-      if (Input.GetKey(characterInput.flyUp) && canFly) {
+
+      // if (Application.systemLanguage == SystemLanguage.French) {
+      //   // Move Up
+      //   if (Input.GetKey(characterInput.flyUpFR) && canFly) {
+      //     transform.position += transform.up * Time.deltaTime * movementSpeed;
+      //   }
+      //   // Move down
+      //   if (Input.GetKey(characterInput.flyDownFR) && canFly) {
+      //     transform.position -= transform.up * Time.deltaTime * movementSpeed;
+      //   }
+      // } else {
+        // Move Up
+      if (Input.GetKey(characterInput.flyUpEN) && canFly) {
         transform.position += transform.up * Time.deltaTime * movementSpeed;
       }
       // Move down
-      if (Input.GetKey(characterInput.flyDown) && canFly) {
+      if (Input.GetKey(characterInput.flyDownEN) && canFly) {
         transform.position -= transform.up * Time.deltaTime * movementSpeed;
       }
+
 
       void Fly() {
         canFly = !canFly;

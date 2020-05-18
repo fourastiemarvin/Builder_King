@@ -7,8 +7,8 @@ public class HardSpawner : MonoBehaviour
     public GameObject[] rockArray;
     GameObject rock;
     GameObject clone;
-    public Vector3[] positions = new[] {new Vector3 (-4.37f,17.67f,-4.63f)};
-    public static Vector3 spawnPosition = new Vector3 (-4.37f,17.67f,-4.63f);
+    public Vector3[] positions = new[] {new Vector3 (-4.37f,18.67f,-4.63f)};
+    public static Vector3 spawnPosition = new Vector3 (-4.37f,18.67f,-4.63f);
     public static int i;
 
     // Start is called before the first frame update

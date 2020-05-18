@@ -18,7 +18,7 @@ public class Bpm : MonoBehaviour
     void Update()
     {
       if (bpmValue != "0") {
-        bpm.text = "bpm: " + bpmValue;
+        bpm.text = "BPM: " + bpmValue;
       }
     }
 }

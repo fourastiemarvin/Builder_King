@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CalibrationMenu : MonoBehaviour
 {
-    public static bool GameInCalibration = true;
+    public static bool GameInCalibration = false;
     public GameObject calibrateMenuUI;
     public GameObject player;
+
 
     // Update is called once per frame
     void Update()

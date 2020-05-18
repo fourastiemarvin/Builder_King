@@ -5,6 +5,8 @@ using UnityEngine;
 public class ComputeTowerHeight : MonoBehaviour
 {
     public GameObject GameOverUI;
+    public GameObject ScoreUI;
+    public GameObject BpmUI;
     public Transform tower;
     public Transform lastRock;
     public float currentHeight;
@@ -83,6 +85,8 @@ public class ComputeTowerHeight : MonoBehaviour
                 Debug.Log("Game Over");
                 Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);
                 Debug.Log("currrentHeight: " + currentHeight);
+                BpmUI.SetActive(false);
+                ScoreUI.SetActive(false);
                 GameOverUI.SetActive(true);
               }
             }
