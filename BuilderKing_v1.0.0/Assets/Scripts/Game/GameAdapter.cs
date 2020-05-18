@@ -15,8 +15,8 @@ public class GameAdapter : MonoBehaviour
     public static bool castEnable;
 
     // Threshold adaptRate
-    public static float hardRate = 0.5f;
-    public static float easyRate = 1;
+    public static float hardRate = 0.75f;
+    public static float easyRate = 1.25f;
 
     public static bool flagCall = false;
 
@@ -33,30 +33,73 @@ public class GameAdapter : MonoBehaviour
       if (!castEnable) {
         bpm = 0;
       }
-      if (bpm + stoneTime > 0) {
-        if (oldStoneTime == 0) {
-          adaptRate = 1.25f;
-          Debug.Log("adaptRate1: "+adaptRate);
+      if (oldStoneTime == 0) {
+        // Second spawn
+        adaptRate = 1.3f;
+        Debug.Log("adapt 2nd:"+adaptRate);
+        Debug.Log("t:"+stoneTime);
+        Debug.Log("old t:"+oldStoneTime);
+      }
+      else {
+        if (stoneTime < oldStoneTime + oldStoneTime * 0.2) {
+          if (bpm > oldBpm + 20) {
+            // Easy spawn
+            adaptRate = 1.3f;
+          } else if (bpm > oldBpm + 10) {
+            // Medium spawn
+            adaptRate = 1f;
+          } else {
+            // Hard spawn
+            adaptRate = 0.7f;
+          }
+          Debug.Log("adapt:"+adaptRate);
+          Debug.Log("t:"+stoneTime);
+          Debug.Log("old t:"+oldStoneTime);
         }
-        else
-        {
-          adaptRate = (stoneTime + bpm) / (oldStoneTime + oldBpm);
-          Debug.Log("adaptRate2: "+adaptRate);
-        }
-
-        oldStoneTime = stoneTime;
-        oldBpm = bpm;
-
-        if (adaptRate > easyRate) {
-          ComputeTowerHeight.spawnEasy = true;
-        }
-        else if (adaptRate < hardRate) {
-          ComputeTowerHeight.spawnHard = true;
+        else if (stoneTime < oldStoneTime + oldStoneTime * 0.5) {
+          if (bpm > oldBpm + 10) {
+            // Easy spawn
+            adaptRate = 1.3f;
+          } else if (bpm < oldBpm - 10) {
+            // Hard spawn
+            adaptRate = 0.7f;
+          } else {
+            // Medium spawn
+            adaptRate = 1f;
+          }
+          Debug.Log("adapt:"+adaptRate);
+          Debug.Log("t:"+stoneTime);
+          Debug.Log("old t:"+oldStoneTime);
         }
         else {
-          ComputeTowerHeight.spawnMedium = true;
+          if (bpm < oldBpm - 20) {
+            // Hard spawn
+            adaptRate = 0.7f;
+          } else if (bpm < oldBpm - 10) {
+            // Medium spawn
+            adaptRate = 1f;
+          } else {
+            // Easy spawn
+            adaptRate = 1.3f;
+          }
+          Debug.Log("adapt:"+adaptRate);
+          Debug.Log("t:"+stoneTime);
+          Debug.Log("old t:"+oldStoneTime);
         }
       }
+
+      if (adaptRate > easyRate) {
+        ComputeTowerHeight.spawnEasy = true;
+      }
+      else if (adaptRate < hardRate) {
+        ComputeTowerHeight.spawnHard = true;
+      }
+      else {
+        ComputeTowerHeight.spawnMedium = true;
+      }
+
+      oldStoneTime = stoneTime;
+      oldBpm = bpm;
     }
 
     // Update is called once per frame
