@@ -64,32 +64,38 @@ public class ComputeTowerHeight : MonoBehaviour
       if (count > 10) {
         if (!Input.GetMouseButton(0)) {
           // if the rock is put on the base of the tower (x,z)
-          if (DragObjectUpdate.rock.position.x >= minX && DragObjectUpdate.rock.position.x <= maxX) {
-            if (DragObjectUpdate.rock.position.z >= minZ && DragObjectUpdate.rock.position.z <= maxZ) {
-              // if the height is higher
-              if (DragObjectUpdate.rock.position.y > currentHeight) {
-                // Update the score
-                Scoring.scoreValue += 10;
-                // Timer off
-                Timer.EndTimer();
-                // Adapt the game
-                Timer.gameTime -= countTime;
-                // Spawn new ones
-                GameAdapter.Adapter();
-                // Update current height
-                currentHeight = DragObjectUpdate.rock.position.y;
-                Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);
-                Debug.Log("currrentHeight: " + currentHeight);
-              }
-              if (DragObjectUpdate.rock.position.y < currentHeight) {
-                Debug.Log("Game Over");
-                Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);
-                Debug.Log("currrentHeight: " + currentHeight);
-                BpmUI.SetActive(false);
-                ScoreUI.SetActive(false);
-                GameOverUI.SetActive(true);
-              }
+          if (DragObjectUpdate.rock.position.x >= minX && DragObjectUpdate.rock.position.x <= maxX && DragObjectUpdate.rock.position.z >= minZ && DragObjectUpdate.rock.position.z <= maxZ) {
+            // if the height is higher
+            if (DragObjectUpdate.rock.position.y > currentHeight) {
+              // Update the score
+              Scoring.scoreValue += 10;
+              // Timer off
+              Timer.EndTimer();
+              // Adapt the game
+              Timer.gameTime -= countTime;
+              // Spawn new ones
+              GameAdapter.Adapter();
+              // Update current height
+              currentHeight = DragObjectUpdate.rock.position.y;
+              Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);
+              Debug.Log("currrentHeight: " + currentHeight);
             }
+            if (DragObjectUpdate.rock.position.y < currentHeight) {
+              Debug.Log("Game Over");
+              Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);
+              Debug.Log("currrentHeight: " + currentHeight);
+              BpmUI.SetActive(false);
+              ScoreUI.SetActive(false);
+              GameOverUI.SetActive(true);
+            }
+          }
+          else {
+            Debug.Log("Game Over");
+            Debug.Log("CurrentObject.y: " + DragObjectUpdate.rock.position.y);
+            Debug.Log("currrentHeight: " + currentHeight);
+            BpmUI.SetActive(false);
+            ScoreUI.SetActive(false);
+            GameOverUI.SetActive(true);
           }
         }
       }

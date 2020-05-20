@@ -27,53 +27,53 @@ public class PlayerMovement : MonoBehaviour
       characterInput = GetComponent<PlayerMovement>();
       body = GetComponent<Rigidbody>();
       body.isKinematic = true;
-      Debug.Log("---->"+Application.systemLanguage);
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
       Vector3 currentPosition = transform.position;
       currentPosition.y = Mathf.Clamp(currentPosition.y, minY, maxY);
       transform.position = currentPosition;
 
-      // TODO : CANEVA SELECTION KEYBOARD
-      // // FRENCH KEYBOARD
-      // if (Application.systemLanguage == SystemLanguage.French) {
-      //   // Move the player forward
-      //   if (Input.GetKey("z") || Input.GetKey(KeyCode.UpArrow)) {
-      //     transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
-      //   }
-      //   // Move backward
-      //   else if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
-      //     transform.position -= transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
-      //   }
-      //   // Move left
-      //   if (Input.GetKey("q") || Input.GetKey(KeyCode.LeftArrow)) {
-      //     transform.position += transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
-      //   }
-      //   // Move right
-      //   else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
-      //     transform.position -= transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
-      //   }
-      // }
-
+      // CANEVA SELECTION KEYBOARD
+      // FRENCH KEYBOARD
+      if (KeyboardSelector.keyboard == "French") {
+        // Move the player forward
+        if (Input.GetKey("z") || Input.GetKey(KeyCode.UpArrow)) {
+          transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
+        }
+        // Move backward
+        else if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
+          transform.position -= transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
+        }
+        // Move left
+        if (Input.GetKey("q") || Input.GetKey(KeyCode.LeftArrow)) {
+          transform.position += transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
+        }
+        // Move right
+        else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
+          transform.position -= transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
+        }
+      }
       // SWISS KEYBOARD
-      // Move the player forward
-      if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) {
-        transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
-      }
-      // Move backward
-      else if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
-        transform.position -= transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
-      }
-      // Move left
-      if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) {
-        transform.position += transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
-      }
-      // Move right
-      else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
-        transform.position -= transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
+      else if (KeyboardSelector.keyboard == "SwissUs") {
+        // Move the player forward
+        if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) {
+          transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
+        }
+        // Move backward
+        else if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
+          transform.position -= transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
+        }
+        // Move left
+        if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) {
+          transform.position += transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
+        }
+        // Move right
+        else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
+          transform.position -= transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
+        }
       }
 
       // Enable fly
@@ -81,23 +81,27 @@ public class PlayerMovement : MonoBehaviour
         Fly();
       }
 
-      // if (Application.systemLanguage == SystemLanguage.French) {
-      //   // Move Up
-      //   if (Input.GetKey(characterInput.flyUpFR) && canFly) {
-      //     transform.position += transform.up * Time.deltaTime * movementSpeed;
-      //   }
-      //   // Move down
-      //   if (Input.GetKey(characterInput.flyDownFR) && canFly) {
-      //     transform.position -= transform.up * Time.deltaTime * movementSpeed;
-      //   }
-      // } else {
+      // FRENCH KEYBOARD
+      if (KeyboardSelector.keyboard == "French") {
         // Move Up
-      if (Input.GetKey(characterInput.flyUpEN) && canFly) {
-        transform.position += transform.up * Time.deltaTime * movementSpeed;
+        if (Input.GetKey(characterInput.flyUpFR) && canFly) {
+          transform.position += transform.up * Time.deltaTime * movementSpeed;
+        }
+        // Move down
+        if (Input.GetKey(characterInput.flyDownFR) && canFly) {
+          transform.position -= transform.up * Time.deltaTime * movementSpeed;
+        }
       }
-      // Move down
-      if (Input.GetKey(characterInput.flyDownEN) && canFly) {
-        transform.position -= transform.up * Time.deltaTime * movementSpeed;
+      // SWISS KEYBOARD
+      else if (KeyboardSelector.keyboard == "SwissUs") {
+        // Move Up
+        if (Input.GetKey(characterInput.flyUpEN) && canFly) {
+          transform.position += transform.up * Time.deltaTime * movementSpeed;
+        }
+        // Move down
+        if (Input.GetKey(characterInput.flyDownEN) && canFly) {
+          transform.position -= transform.up * Time.deltaTime * movementSpeed;
+        }
       }
 
 

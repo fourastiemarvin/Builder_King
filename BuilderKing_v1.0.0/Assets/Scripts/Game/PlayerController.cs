@@ -21,69 +21,73 @@ public class PlayerController : MonoBehaviour
       transform.localPosition = new Vector3(0.02f, -1, -0.1f);
       transform.localRotation =  Quaternion.identity;
 
-      // if (Application.systemLanguage == SystemLanguage.French) {
-      //   // FORWARD WALKING
-      //   if (Input.GetKey("z") || Input.GetKey(KeyCode.UpArrow)) {
-      //     anim.SetBool("isWalking", true);
-      //   }
-      //   else {
-      //     anim.SetBool("isWalking", false);
-      //   }
-      //
-      //   // BACKWARD WALKING
-      //   if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
-      //     anim.SetBool("isBackwardWalking", true);
-      //   }
-      //   else {
-      //     anim.SetBool("isBackwardWalking", false);
-      //   }
-      //
-      //   // LEFT WALKING
-      //   if (Input.GetKey("q") || Input.GetKey(KeyCode.LeftArrow)) {
-      //     anim.SetBool("isLeftWalking", true);
-      //   }
-      //   else {
-      //     anim.SetBool("isLeftWalking", false);
-      //   }
-      //
-      //   // RIGHT WALKING
-      //   if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
-      //     anim.SetBool("isRightWalking", true);
-      //   }
-      //   else {
-      //     anim.SetBool("isRightWalking", false);
-      //   }
-      // } else {
-      // FORWARD WALKING
-      if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) {
-        anim.SetBool("isWalking", true);
-      }
-      else {
-        anim.SetBool("isWalking", false);
-      }
+      if (KeyboardSelector.keyboard == "French") {
+        // FORWARD WALKING
+        if (Input.GetKey("z") || Input.GetKey(KeyCode.UpArrow)) {
+          anim.SetBool("isWalking", true);
+        }
+        else {
+          anim.SetBool("isWalking", false);
+        }
 
-      // BACKWARD WALKING
-      if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
-        anim.SetBool("isBackwardWalking", true);
-      }
-      else {
-        anim.SetBool("isBackwardWalking", false);
-      }
+        // BACKWARD WALKING
+        if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
+          anim.SetBool("isBackwardWalking", true);
+        }
+        else {
+          anim.SetBool("isBackwardWalking", false);
+        }
 
-      // LEFT WALKING
-      if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) {
-        anim.SetBool("isLeftWalking", true);
-      }
-      else {
-        anim.SetBool("isLeftWalking", false);
-      }
+        // LEFT WALKING
+        if (Input.GetKey("q") || Input.GetKey(KeyCode.LeftArrow)) {
+          anim.SetBool("isLeftWalking", true);
+        }
+        else {
+          anim.SetBool("isLeftWalking", false);
+        }
 
-      // RIGHT WALKING
-      if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
-        anim.SetBool("isRightWalking", true);
+        // RIGHT WALKING
+        if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
+          anim.SetBool("isRightWalking", true);
+        }
+        else {
+          anim.SetBool("isRightWalking", false);
+        }
+
       }
-      else {
-        anim.SetBool("isRightWalking", false);
+      // SWISS KEYBOARD
+      else if (KeyboardSelector.keyboard == "SwissUs") {
+        // FORWARD WALKING
+        if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow)) {
+          anim.SetBool("isWalking", true);
+        }
+        else {
+          anim.SetBool("isWalking", false);
+        }
+
+        // BACKWARD WALKING
+        if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) {
+          anim.SetBool("isBackwardWalking", true);
+        }
+        else {
+          anim.SetBool("isBackwardWalking", false);
+        }
+
+        // LEFT WALKING
+        if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) {
+          anim.SetBool("isLeftWalking", true);
+        }
+        else {
+          anim.SetBool("isLeftWalking", false);
+        }
+
+        // RIGHT WALKING
+        if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
+          anim.SetBool("isRightWalking", true);
+        }
+        else {
+          anim.SetBool("isRightWalking", false);
+        }
       }
 
       // FLYING
