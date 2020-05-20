@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour {
     public void playGame() {
       Time.timeScale = 1f;
       Scoring.scoreValue = 0;
+      GameAdapter.oldStoneTime = 0;
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

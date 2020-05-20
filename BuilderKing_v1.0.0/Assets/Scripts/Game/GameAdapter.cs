@@ -36,12 +36,9 @@ public class GameAdapter : MonoBehaviour
       if (oldStoneTime == 0) {
         // Second spawn
         adaptRate = 1.3f;
-        Debug.Log("adapt 2nd:"+adaptRate);
-        Debug.Log("t:"+stoneTime);
-        Debug.Log("old t:"+oldStoneTime);
       }
       else {
-        if (stoneTime < oldStoneTime + oldStoneTime * 0.2) {
+        if (stoneTime < oldStoneTime + oldStoneTime * 0.05) {
           if (bpm > oldBpm + 20) {
             // Easy spawn
             adaptRate = 1.3f;
@@ -52,9 +49,6 @@ public class GameAdapter : MonoBehaviour
             // Hard spawn
             adaptRate = 0.7f;
           }
-          Debug.Log("adapt:"+adaptRate);
-          Debug.Log("t:"+stoneTime);
-          Debug.Log("old t:"+oldStoneTime);
         }
         else if (stoneTime < oldStoneTime + oldStoneTime * 0.5) {
           if (bpm > oldBpm + 10) {
@@ -67,9 +61,6 @@ public class GameAdapter : MonoBehaviour
             // Medium spawn
             adaptRate = 1f;
           }
-          Debug.Log("adapt:"+adaptRate);
-          Debug.Log("t:"+stoneTime);
-          Debug.Log("old t:"+oldStoneTime);
         }
         else {
           if (bpm < oldBpm - 20) {
@@ -82,9 +73,6 @@ public class GameAdapter : MonoBehaviour
             // Easy spawn
             adaptRate = 1.3f;
           }
-          Debug.Log("adapt:"+adaptRate);
-          Debug.Log("t:"+stoneTime);
-          Debug.Log("old t:"+oldStoneTime);
         }
       }
 
