@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
           transform.position += transform.up * Time.deltaTime * movementSpeed;
         }
         // Move down
-        if (Input.GetKey(characterInput.flyDownFR) && canFly) {
+        if (Input.GetKey(characterInput.flyDownFR) && canFly  && transform.position.y > 15.3f) {
           transform.position -= transform.up * Time.deltaTime * movementSpeed;
         }
       }
@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
           transform.position += transform.up * Time.deltaTime * movementSpeed;
         }
         // Move down
-        if (Input.GetKey(characterInput.flyDownEN) && canFly) {
+        if (Input.GetKey(characterInput.flyDownEN) && canFly && transform.position.y > 15.3f) {
           transform.position -= transform.up * Time.deltaTime * movementSpeed;
         }
       }

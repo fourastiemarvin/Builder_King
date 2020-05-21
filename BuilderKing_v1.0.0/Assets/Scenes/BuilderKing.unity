@@ -2777,7 +2777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4050830807347228, guid: 797710b9cddb52647aa5e2345461502f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.54
+      value: -13.62
       objectReference: {fileID: 0}
     - target: {fileID: 4050830807347228, guid: 797710b9cddb52647aa5e2345461502f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5508,6 +5508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   calibrateMenuUI: {fileID: 1070326342}
+  pauseMenuUI: {fileID: 1603693692}
   player: {fileID: 599986117}
 --- !u!114 &874271957
 MonoBehaviour:

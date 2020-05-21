@@ -6,6 +6,7 @@ public class CalibrationMenu : MonoBehaviour
 {
     public static bool GameInCalibration = false;
     public GameObject calibrateMenuUI;
+    public GameObject pauseMenuUI;
     public GameObject player;
 
 
@@ -25,9 +26,8 @@ public class CalibrationMenu : MonoBehaviour
       // recalibration of the camera according to the player
       Debug.Log(player.transform.eulerAngles.y);
       Camera.main.transform.rotation = Quaternion.Euler(player.transform.eulerAngles.x, player.transform.eulerAngles.y, player.transform.eulerAngles.z);
-
       calibrateMenuUI.SetActive(false);
-      Time.timeScale = 1f;
+      pauseMenuUI.SetActive(true);
       GameInCalibration = false;
     }
 
