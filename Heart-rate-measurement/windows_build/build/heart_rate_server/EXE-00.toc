@@ -1,0 +1,950 @@
+('C:\\Users\\Tommaso\\Desktop\\Heart-rate-measuremenMarvint\\dist\\heart_rate_server.exe',
+ True,
+ False,
+ False,
+ None,
+ None,
+ False,
+ False,
+ '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1"><assemblyIdentity name="heart_rate_server" processorArchitecture="amd64" type="win32" version="1.0.0.0"/><dependency><dependentAssembly><assemblyIdentity language="*" name="Microsoft.Windows.Common-Controls" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" type="win32" version="6.0.0.0"/><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"/></dependentAssembly></dependency><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"><application><supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/><supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/><supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/><supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/><supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/></application></compatibility></assembly>',
+ True,
+ 'heart_rate_server.pkg',
+ [('PYZ-00.pyz',
+   'C:\\Users\\Tommaso\\Desktop\\Heart-rate-measuremenMarvint\\build\\heart_rate_server\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\struct.pyo',
+   'PYMODULE'),
+  ('pyimod01_os_path',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
+   'PYMODULE'),
+  ('pyimod02_archive',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
+   'PYMODULE'),
+  ('pyimod03_importers',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyqt5',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_pyqt5.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('heart_rate_server',
+   'C:\\Users\\Tommaso\\Desktop\\Heart-rate-measuremenMarvint\\heart_rate_server.py',
+   'PYSOURCE'),
+  ('VCRUNTIME140.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('python36.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\python36.dll',
+   'BINARY'),
+  ('libslsqp_op.RGGN6ZOFD2K47X7YRNDYCM7JFP4AGLER.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libslsqp_op.RGGN6ZOFD2K47X7YRNDYCM7JFP4AGLER.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libopenblas.PYQHXLVVQ7VESDPUVUADXEVJOBGHJPAY.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libopenblas.PYQHXLVVQ7VESDPUVUADXEVJOBGHJPAY.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libgetbreak.52XR6FXTDBZJEAXZ7RBM3ZG7BEALZ5AO.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libgetbreak.52XR6FXTDBZJEAXZ7RBM3ZG7BEALZ5AO.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libwrap_dum.YRXNVUDMSZ7QU4JMXEOVLBRJVRHCDMOD.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libwrap_dum.YRXNVUDMSZ7QU4JMXEOVLBRJVRHCDMOD.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\styles\\qwindowsvistastyle.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\styles\\qwindowsvistastyle.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platforms\\qminimal.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms\\qminimal.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qwbmp.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('libd_odr.FR3MMVWLL2YV6H3CHVW3EJKE6O26S777.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libd_odr.FR3MMVWLL2YV6H3CHVW3EJKE6O26S777.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('liblbfgsb.YW64XR7R2AS5O3KQDT3MUZ2FXBQP3DXM.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\liblbfgsb.YW64XR7R2AS5O3KQDT3MUZ2FXBQP3DXM.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('lib_blas_su.A3U3MLJNLZPXLN2HULSVAUE4SILUSO3S.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\lib_blas_su.A3U3MLJNLZPXLN2HULSVAUE4SILUSO3S.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\iconengines\\qsvgicon.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\iconengines\\qsvgicon.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'BINARY'),
+  ('libbanded5x.LJ25CFOXGVH6FGR46JMAT7BI46ZEL7MV.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libbanded5x.LJ25CFOXGVH6FGR46JMAT7BI46ZEL7MV.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qjpeg.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qjpeg.dll',
+   'BINARY'),
+  ('opengl32sw.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\opengl32sw.dll',
+   'BINARY'),
+  ('libcobyla2.25EVUSEBAW7VKISARB7LO3UGZPN2HXE3.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libcobyla2.25EVUSEBAW7VKISARB7LO3UGZPN2HXE3.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qwebp.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qwebp.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qsvg.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('libdet.3DUM4WTGGUXU7ZG3JXJUWKRAUXB44DQK.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libdet.3DUM4WTGGUXU7ZG3JXJUWKRAUXB44DQK.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libdcsrch.I2AOPDCXAPDRFNPWY55H5UE7XZSU5CVN.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libdcsrch.I2AOPDCXAPDRFNPWY55H5UE7XZSU5CVN.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('lib_test_fo.JF5HTWMUPBXWGAYEBVEJU3OZAHTSVKCT.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\lib_test_fo.JF5HTWMUPBXWGAYEBVEJU3OZAHTSVKCT.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libdfft_sub.HB6HWU2LTJ5P64D6JB5BTIRBGGFAIHE4.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libdfft_sub.HB6HWU2LTJ5P64D6JB5BTIRBGGFAIHE4.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libnnls.IXEEHJUCGHJL42YZEM6UIEMROJWXHMLJ.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libnnls.IXEEHJUCGHJL42YZEM6UIEMROJWXHMLJ.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libdgamln.H2VDXKY726EXWGYWTLQFWCUQWEOKCW66.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libdgamln.H2VDXKY726EXWGYWTLQFWCUQWEOKCW66.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libGLESv2.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\libGLESv2.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qtiff.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qtiff.dll',
+   'BINARY'),
+  ('libblkdta00.DM6OZU6JK6GW2OVVTW7IQSMZ7CM436UX.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libblkdta00.DM6OZU6JK6GW2OVVTW7IQSMZ7CM436UX.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libwrap_dum.INBF4P5HZHWSHKX5FWH4U4H3URQULOGK.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libwrap_dum.INBF4P5HZHWSHKX5FWH4U4H3URQULOGK.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libspecfun.LQCTHMCYNULEOOGKIO6AGREE6D6V37RU.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libspecfun.LQCTHMCYNULEOOGKIO6AGREE6D6V37RU.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qtga.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
+  ('libdqag.ASUMN6BY75Q4T7EHKHRAAMUB7NJQZ6AF.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libdqag.ASUMN6BY75Q4T7EHKHRAAMUB7NJQZ6AF.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('msvcp140.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\msvcp140.dll',
+   'BINARY'),
+  ('d3dcompiler_47.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\d3dcompiler_47.dll',
+   'BINARY'),
+  ('libdop853.6TJTQZW3I3Q3QIDQHEOBEZKJ3NYRXI4B.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libdop853.6TJTQZW3I3Q3QIDQHEOBEZKJ3NYRXI4B.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platforms\\qwebgl.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms\\qwebgl.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platforms\\qwindows.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qico.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('libdfitpack.7IZFBC3Q4BSML6VEPAU5LY2YM76FDQBW.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libdfitpack.7IZFBC3Q4BSML6VEPAU5LY2YM76FDQBW.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libchkder.G7WSOGIYYQO3UWFVEZ3PPXCXR53ADVPA.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libchkder.G7WSOGIYYQO3UWFVEZ3PPXCXR53ADVPA.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qicns.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
+  ('libansari.R6EA3HQP5KZ6TAXU4Y4ZVTRPT7UVA53Z.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libansari.R6EA3HQP5KZ6TAXU4Y4ZVTRPT7UVA53Z.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libmvndst.ESZZP47EV6RKCFYTPDCSXD6LWVEBJFUI.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libmvndst.ESZZP47EV6RKCFYTPDCSXD6LWVEBJFUI.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('libvode.77WNQL2EO7262UY6NS4XKZBSXCVMKUJ5.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libvode.77WNQL2EO7262UY6NS4XKZBSXCVMKUJ5.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platforms\\qoffscreen.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('libbispeu.7AH3PCQ2E2NGLC3AQD7FFAH73KGJTZCJ.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\libbispeu.7AH3PCQ2E2NGLC3AQD7FFAH73KGJTZCJ.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qgif.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('libEGL.dll',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\libEGL.dll',
+   'BINARY'),
+  ('lib_arpack-.ZWLQK2J4Q7LTA6NRHLOFYQ7CTZKNNRPK.gfortran-win_amd64.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\.libs\\lib_arpack-.ZWLQK2J4Q7LTA6NRHLOFYQ7CTZKNNRPK.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('_hashlib',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('select',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('pyexpat',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_ssl',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_decimal',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_ctypes',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_lzma',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_multiprocessing',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('_socket',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('unicodedata',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython._version',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\_version.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython.error',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\error.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython.constants',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\constants.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython._device',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\_device.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython._proxy_steerable',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\_proxy_steerable.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython._poll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\_poll.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython.message',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\message.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython.context',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\context.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython.utils',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\utils.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.backend.cython.socket',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\backend\\cython\\socket.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('zmq.libzmq',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\zmq\\libzmq.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('PyQt5.QtWidgets',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\QtWidgets.pyd',
+   'EXTENSION'),
+  ('PyQt5.QtGui',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\QtGui.pyd',
+   'EXTENSION'),
+  ('PyQt5.QtCore',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\QtCore.pyd',
+   'EXTENSION'),
+  ('PyQt5.sip',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\sip.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('PyQt5.QtTest',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\QtTest.pyd',
+   'EXTENSION'),
+  ('PyQt5.QtOpenGL',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\QtOpenGL.pyd',
+   'EXTENSION'),
+  ('PyQt5.QtSvg',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\QtSvg.pyd',
+   'EXTENSION'),
+  ('_elementtree',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('_distutils_findvs',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_distutils_findvs.pyd',
+   'EXTENSION'),
+  ('scipy._lib._fpumode',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\_lib\\_fpumode.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy._lib._ccallback_c',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\_lib\\_ccallback_c.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy._lib.messagestream',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\_lib\\messagestream.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.signal._peak_finding_utils',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\signal\\_peak_finding_utils.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.linalg._flapack',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\linalg\\_flapack.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.linalg._fblas',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\linalg\\_fblas.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.csgraph._tools',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\csgraph\\_tools.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.csgraph._reordering',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\csgraph\\_reordering.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.csgraph._matching',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\csgraph\\_matching.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.csgraph._flow',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\csgraph\\_flow.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.csgraph._min_spanning_tree',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\csgraph\\_min_spanning_tree.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.csgraph._traversal',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\csgraph\\_traversal.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.csgraph._shortest_path',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\csgraph\\_shortest_path.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse._sparsetools',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\_sparsetools.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse._csparsetools',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\_csparsetools.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.special._ellip_harm_2',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\special\\_ellip_harm_2.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.special._comb',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\special\\_comb.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.special.specfun',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\special\\specfun.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.special._ufuncs',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\special\\_ufuncs.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.special._ufuncs_cxx',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\special\\_ufuncs_cxx.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.core._multiarray_umath',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\core\\_multiarray_umath.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.stats.mvn',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\stats\\mvn.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.stats.statlib',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\stats\\statlib.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.ndimage._nd_image',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\ndimage\\_nd_image.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.ndimage._ni_label',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\ndimage\\_ni_label.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.spatial._hausdorff',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\spatial\\_hausdorff.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.spatial._distance_wrap',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\spatial\\_distance_wrap.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.interpolate.interpnd',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\interpolate\\interpnd.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.interpolate._ppoly',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\interpolate\\_ppoly.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.interpolate._bspl',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\interpolate\\_bspl.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.interpolate.dfitpack',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\interpolate\\dfitpack.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.interpolate._fitpack',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\interpolate\\_fitpack.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.stats._stats',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\stats\\_stats.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.signal._spectral',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\signal\\_spectral.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.signal._sosfilt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\signal\\_sosfilt.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.fft._pocketfft.pypocketfft',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\fft\\_pocketfft\\pypocketfft.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.signal.spline',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\signal\\spline.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.signal._upfirdn_apply',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\signal\\_upfirdn_apply.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.signal._max_len_seq_inner',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\signal\\_max_len_seq_inner.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.signal.sigtools',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\signal\\sigtools.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._group_columns',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_group_columns.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.linalg._solve_toeplitz',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\linalg\\_solve_toeplitz.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.linalg._flinalg',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\linalg\\_flinalg.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.linalg.eigen.arpack._arpack',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\linalg\\eigen\\arpack\\_arpack.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.linalg.dsolve._superlu',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\linalg\\dsolve\\_superlu.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.sparse.linalg.isolve._iterative',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\sparse\\linalg\\isolve\\_iterative.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.integrate.lsoda',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\integrate\\lsoda.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.integrate._dop',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\integrate\\_dop.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.integrate.vode',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\integrate\\vode.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.integrate._quadpack',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\integrate\\_quadpack.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.integrate._odepack',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\integrate\\_odepack.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._lsq.givens_elimination',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_lsq\\givens_elimination.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._lsap_module',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_lsap_module.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._bglu_dense',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_bglu_dense.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._nnls',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_nnls.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._slsqp',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_slsqp.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._zeros',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_zeros.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._minpack',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_minpack.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._trlib._trlib',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_trlib\\_trlib.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._cobyla',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_cobyla.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize.moduleTNC',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\moduleTNC.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize._lbfgsb',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\_lbfgsb.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.optimize.minpack2',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\optimize\\minpack2.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.spatial._voronoi',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\spatial\\_voronoi.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.spatial.qhull',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\spatial\\qhull.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.spatial.ckdtree',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\spatial\\ckdtree.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.linalg.cython_lapack',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\linalg\\cython_lapack.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.linalg.cython_blas',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\linalg\\cython_blas.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy.linalg._decomp_update',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\linalg\\_decomp_update.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy._lib._uarray._uarray',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\_lib\\_uarray\\_uarray.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.fft._pocketfft_internal',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\fft\\_pocketfft_internal.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.mtrand',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\mtrand.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._sfc64',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\_sfc64.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._philox',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\_philox.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._pcg64',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\_pcg64.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._mt19937',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\_mt19937.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._bit_generator',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\_bit_generator.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._generator',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\_generator.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._bounded_integers',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\_bounded_integers.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._common',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\_common.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.core._multiarray_tests',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\core\\_multiarray_tests.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.linalg._umath_linalg',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.linalg.lapack_lite',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\linalg\\lapack_lite.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('dlib.dlib',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\dlib\\dlib.pyd',
+   'EXTENSION'),
+  ('cv2.cv2',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\cv2\\cv2.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('Qt5Core.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Core.dll',
+   'BINARY'),
+  ('Qt5Widgets.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Widgets.dll',
+   'BINARY'),
+  ('Qt5Gui.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Gui.dll',
+   'BINARY'),
+  ('Qt5Svg.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Svg.dll',
+   'BINARY'),
+  ('Qt5DBus.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5DBus.dll',
+   'BINARY'),
+  ('Qt5WebSockets.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5WebSockets.dll',
+   'BINARY'),
+  ('Qt5Network.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Network.dll',
+   'BINARY'),
+  ('Qt5Quick.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Quick.dll',
+   'BINARY'),
+  ('python3.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\python3.dll',
+   'BINARY'),
+  ('Qt5Test.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Test.dll',
+   'BINARY'),
+  ('Qt5OpenGL.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5OpenGL.dll',
+   'BINARY'),
+  ('Qt5QmlModels.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5QmlModels.dll',
+   'BINARY'),
+  ('Qt5Qml.dll',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Qml.dll',
+   'BINARY'),
+  ('base_library.zip',
+   'C:\\Users\\Tommaso\\Desktop\\Heart-rate-measuremenMarvint\\build\\heart_rate_server\\base_library.zip',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\qtquickwidgets.py',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\qtquickwidgets.py',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\__pycache__\\qtprintsupport.cpython-36.pyc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\__pycache__\\qtprintsupport.cpython-36.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_en.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_es.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_pl.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.6.8.final.0.pickle',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\PatternGrammar3.6.8.final.0.pickle',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_fr.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_he.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\__pycache__\\qtcharts.cpython-36.pyc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\__pycache__\\qtcharts.cpython-36.pyc',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\qscintilla.py',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\qscintilla.py',
+   'DATA'),
+  ('lib2to3\\Grammar.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\Grammar.txt',
+   'DATA'),
+  ('lib2to3\\PatternGrammar.txt',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\PatternGrammar.txt',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_it.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ca.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_sk.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('lib2to3\\Grammar3.6.8.final.0.pickle',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\Grammar3.6.8.final.0.pickle',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_zh_TW.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_lv.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_cs.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\__pycache__\\qaxcontainer.cpython-36.pyc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\__pycache__\\qaxcontainer.cpython-36.pyc',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\qtwebenginewidgets.py',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\qtwebenginewidgets.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_gd.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ko.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\qtprintsupport.py',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\qtprintsupport.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_uk.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('lib2to3\\tests\\data\\README',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\tests\\data\\README',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\__pycache__\\qtquickwidgets.cpython-36.pyc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\__pycache__\\qtquickwidgets.cpython-36.pyc',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\qtwebkit.py',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\qtwebkit.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_da.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_de.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('Include\\pyconfig.h',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\Include\\pyconfig.h',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ar.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\__pycache__\\qscintilla.cpython-36.pyc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\__pycache__\\qscintilla.cpython-36.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_fi.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_bg.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ru.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\__pycache__\\qtwebenginewidgets.cpython-36.pyc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\__pycache__\\qtwebenginewidgets.cpython-36.pyc',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\qaxcontainer.py',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\qaxcontainer.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_hu.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\qtcharts.py',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\qtcharts.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ja.qm',
+   'C:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('PyQt5\\uic\\widget-plugins\\__pycache__\\qtwebkit.cpython-36.pyc',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyQt5\\uic\\widget-plugins\\__pycache__\\qtwebkit.cpython-36.pyc',
+   'DATA'),
+  ('heart_rate_server.exe.manifest',
+   'C:\\Users\\Tommaso\\Desktop\\Heart-rate-measuremenMarvint\\build\\heart_rate_server\\heart_rate_server.exe.manifest',
+   'BINARY'),
+  ('pyi-windows-manifest-filename heart_rate_server.exe.manifest',
+   '',
+   'OPTION')],
+ [],
+ False,
+ False,
+ 1589796091,
+ [('run.exe',
+   'c:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
+   'EXECUTABLE')])
