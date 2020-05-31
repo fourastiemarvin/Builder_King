@@ -1,29 +1,38 @@
 # Builder King
 
 ### A puzzle game which adapt the difficulty with regard to your stress
-The goal of Builder King is simple: stack stones to reach the higher point possible. Your score will dermine if you are the Builder King ! This game will send you in a beautiful island where you will can move freely in an impressive 3D environment.
-Builder King is unique by the way the game evolves regarding to your level of stress, the game will become easier or harder if your stress increases or not. 
+The goal of Builder King is simple: stack stones to reach the highest point possible. Your score will dermine if you are the Builder King ! This game will send you in a beautiful island where you will can move freely in an impressive 3D environment.
+Builder King is unique by the way the game evolves regarding to your level of stress, the game will become easier or harder if your stress increases or not.
 
 ## Requirements
-To use the heart rate measurment tool, you will need [Python 3](https://www.python.org/downloads/), [CMake](https://cmake.org/download/) and [pip](https://pip.pypa.io/en/stable/installing/). To install all the required libraries, run the following commands:
+Builder King was tested and is stable on the following OS:
+* Windows 10
+* Ubuntu 18.04
+
+The game is not currently available on MacOS
+
+To use the heart rate measurement tool, you will need to have a webcam.
+
+## Let's Play!
+Go to the [release page](https://github.com/fourastiemarvin/Builder_King/releases) and download the zip adapted to your OS. Once you have uncompressed the directory, run the heart rate measurement tool (heart_rate_server) and when it launched, run the Builder King game.
+If you have any trouble using the heart rate measurment tool, you can play without but the adaptation will be less precise. See Troubleshooting section for more details
+
+## Run directly with the source code
+You can use the Builder_King directory as a unity project and/or run the heart rate measurement tool with python 3. To do so, you will need [Python 3](https://www.python.org/downloads/), [CMake](https://cmake.org/download/) and [pip](https://pip.pypa.io/en/stable/installing/). To install all the required libraries, run the following commands after cloning the repository:
+
 ```
 pip3 install pyzmq
 pip3 install -r requirements.txt
 ```
-You can run the game on Windows, MacOS or Linux !
-
-## Let's Play!
-After cloning/downloading the repository, run the following commands in your terminal to launch the heart rate measurement tool:
+To run the heart rate measurement tool, write in the terminal:
 ```
 cd Builder_King/Heart-rate-measurement
 python3 heart_rate_server.py
 ```
-You will normally see the application running.
-
-After that, launch the right executable and enjoy !
-
+**NOTE:** depending of your installation you may need to use pip and python instead pip3 and python3
 ## Troubleshooting
-If you have errors while installing dlib here a [link](https://stackoverflow.com/a/49538054) to help you
+* If you have errors while installing dlib, here a [link](https://stackoverflow.com/a/49538054) to help you
+* If you have "adress already in use" error in your terminal while using the heart rate measurement tool, try to restart your computer (must work after that, this problem is not fixed yet)
 
 ## Authors
 * [Patrick SARDINHA](https://github.com/sardinhapatrick)
