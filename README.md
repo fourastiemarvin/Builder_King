@@ -14,11 +14,16 @@ The game is not currently available on MacOS
 To use the heart rate measurement tool, you will need to have a webcam.
 
 ## Let's Play!
-Go to the [release page](https://github.com/fourastiemarvin/Builder_King/releases) and download the zip adapted to your OS. Once you have uncompressed the directory, run the heart rate measurement tool (heart_rate_server) and when it launched, run the Builder King game.
+The easiest way to play Builder King is to execute the following steps
+* Go to the [release page](https://github.com/fourastiemarvin/Builder_King/releases) and download the zip adapted to your OS.
+* Uncompress the directory 
+* Run the heart rate measurement tool (heart_rate_server) and wait until it launched 
+* Run the Builder King game and enjoy!!!
+
 If you have any trouble using the heart rate measurment tool, you can play without but the adaptation will be less precise. See Troubleshooting section for more details
 
-## Run directly with the source code
-You can use the Builder_King directory as a unity project and/or run the heart rate measurement tool with python 3. To do so, you will need [Python 3](https://www.python.org/downloads/), [CMake](https://cmake.org/download/) and [pip](https://pip.pypa.io/en/stable/installing/). To install all the required libraries, run the following commands after cloning the repository:
+### Run directly with the source code
+You can use the BuilderKing_vX.X.X directory as a unity project and/or run the heart rate measurement tool with Python 3. To do so, you will need [Python 3](https://www.python.org/downloads/), [CMake](https://cmake.org/download/) and [pip](https://pip.pypa.io/en/stable/installing/). To install all the required libraries, run the following commands after cloning the repository:
 
 ```
 pip3 install pyzmq
