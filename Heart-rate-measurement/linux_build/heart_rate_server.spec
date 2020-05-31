@@ -1,33 +1,3 @@
-# -*- mode: python ; coding: utf-8 -*-
-
-block_cipher = None
-
-
-a = Analysis(['heart_rate_server.py'],
-             pathex=['/home/marvinf/Desktop/M2/sys_multimodal/Builder_King/Heart-rate-measurement'],
-             binaries=[],
-             datas=[],
-             hiddenimports=[],
-             hookspath=[],
-             runtime_hooks=[],
-             excludes=[],
-             win_no_prefer_redirects=False,
-             win_private_assemblies=False,
-             cipher=block_cipher,
-             noarchive=False)
-pyz = PYZ(a.pure, a.zipped_data,
-             cipher=block_cipher)
-exe = EXE(pyz,
-          a.scripts,
-          a.binaries,
-          a.zipfiles,
-          a.datas,
-          [],
-          name='heart_rate_server',
-          debug=False,
-          bootloader_ignore_signals=False,
-          strip=False,
-          upx=True,
-          upx_exclude=[],
-          runtime_tmpdir=None,
-          console=True )
+version https://git-lfs.github.com/spec/v1
+oid sha256:4bf6da11a749aa8e12d822f7805f1dfda06c82fbaec9693f762b4c6c6f3261a7
+size 924
