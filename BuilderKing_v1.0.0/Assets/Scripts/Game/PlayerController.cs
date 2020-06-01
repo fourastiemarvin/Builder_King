@@ -7,11 +7,21 @@ public class PlayerController : MonoBehaviour
 
     public Animator anim;
     public bool onFly = false;
+    public GameObject panelSwissUS;
+    public GameObject panelFR;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        if (KeyboardSelector.keyboard == "SwissUs") {
+          panelSwissUS.SetActive(true);
+          Time.timeScale = 0f;
+        }
+        else if (KeyboardSelector.keyboard == "French") {
+          panelFR.SetActive(true);
+          Time.timeScale = 0f;
+        }
     }
 
     // Update is called once per frame
