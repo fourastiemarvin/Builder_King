@@ -38,6 +38,7 @@ python3 heart_rate_server.py
 ## Troubleshooting
 * If you have errors while installing dlib, here a [link](https://stackoverflow.com/a/49538054) to help you
 * If you have "adress already in use" error in your terminal while using the heart rate measurement tool, try to restart your computer (must work after that, this problem is not fixed yet)
+* Running the game before the heart rate measurement tool can make this last crash. To prevent this, make sure you have launched the heart rate measurement executable before lauching the game.
 
 ## Authors
 * [Patrick SARDINHA](https://github.com/sardinhapatrick)
