@@ -1,6 +1,6 @@
 # Builder King
 
-### A puzzle game which adapt the difficulty with regard to your stress
+### A puzzle game which adapts the difficulty with regards to your stress
 The goal of Builder King is simple: stack stones to reach the highest point possible. Your score will dermine if you are the Builder King ! This game will send you in a beautiful island where you will can move freely in an impressive 3D environment.
 Builder King is unique by the way the game evolves regarding to your level of stress, the game will become easier or harder if your stress increases or not.
 
